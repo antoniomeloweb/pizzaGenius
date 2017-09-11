@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    android:background="#000000"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pizzagenius.activity.MainActivity" >
+
+    <ImageView
+        android:id="@+id/bg_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/bg_start" />
+
+    <ImageButton
+        android:id="@+id/bt_iniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/iniciar" />
+
+    <ImageButton
+        android:id="@+id/bt_configurar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_iniciar"
+        android:layout_below="@+id/bt_iniciar"
+        android:src="@drawable/configurar" />
+
+    <ImageButton
+        android:id="@+id/bt_sair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_configurar"
+        android:layout_alignRight="@+id/bt_configurar"
+        android:layout_below="@+id/bt_configurar"
+        android:src="@drawable/sair" />
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_iniciar"
+        android:layout_alignLeft="@+id/bg_start"
+        android:layout_marginBottom="49dp"
+        android:src="@drawable/title" />
+
+</RelativeLayout>
